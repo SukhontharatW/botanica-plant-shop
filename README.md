@@ -1,8 +1,10 @@
-# React + Vite
+**Overview :**
+Botanica Plant is a plant shop landing page designed to showcase diverse range of plants, highlight customer testimonials, and provide easy access to our contact information for inquiries and consultations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Purpose :** 
+The purpose of this project is to demonstrate my skills in Frontend Development. Credit for design goes to Peterdraw studio.
 
-Currently, two official plugins are available:
+**Built with :** 
+React, SASS/CSS, HTML, JavaScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Demo :** https://botanica-plant-dev.netlify.app/
