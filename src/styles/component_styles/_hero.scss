@@ -1,0 +1,130 @@
+@use "../global/" as *;
+
+.container__hero {
+  background-image: url("/Hero-section.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+  padding-top: 11.6rem;
+  min-height: 100vh;
+  // border: 1px solid green;
+  @media (max-width: 1200px) {
+    background-image: linear-gradient(
+        rgba($color-green, 0.1),
+        rgba($color-white, 0.8)
+      ),
+      url("/Hero-section.png");
+    // backdrop-filter: blur(15px);
+    align-items: center;
+    justify-content: center;
+  }
+}
+.bg-green-white {
+  @media (max-width: 1200px) {
+    background-image: linear-gradient(
+      rgba($color-green, 0.1),
+      rgba($color-white, 0.8)
+    );
+  }
+}
+.hero {
+  &__top {
+    max-width: 31.5rem;
+    @media (max-width: 1200px) {
+      min-width: 100%;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    // border: 1px solid red;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__greeting {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: start;
+    // border: 1px solid red;
+    @media (max-width: 1200px) {
+      padding: 0 2rem;
+      align-items: center;
+
+      & .paragraph__normal {
+        opacity: 1;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__plant {
+    // border: 1px solid red;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & li {
+      list-style: none;
+      padding-left: 2.4rem;
+      padding: 1.2rem 0 1.2rem 2.4rem;
+      transition: all 0.3s;
+      border-left: 0.4rem solid $color-green-light;
+      &:hover,
+      &:active {
+        border-left: 0.4rem solid $color-green;
+      }
+    }
+    &-link {
+      cursor: pointer;
+      opacity: $opacity-min;
+      list-style: none;
+      color: $color-black;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover,
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+  &__image {
+    height: 100%;
+    width: 100%;
+
+    & img {
+      background-image: url("Hero-section.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+    }
+  }
+  &__detail {
+    max-width: 36rem;
+    display: flex;
+    flex-direction: column;
+
+    & .paragraph__normal {
+      padding-top: 1.6rem;
+      padding-bottom: 4rem;
+    }
+    & .btn__read {
+      align-self: flex-end;
+      margin-bottom: 1.2rem;
+      margin-top: 4rem;
+    }
+  }
+}

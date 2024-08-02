@@ -1,0 +1,38 @@
+@use "../global/" as *;
+
+.container__cta {
+  // border: 1px solid green;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 12rem;
+
+  padding: 6.4rem 2rem 41.7rem 2rem;
+
+  background-image: url("/CTA-section.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 800px) {
+    padding: 6.4rem 2rem 8rem 2rem;
+  }
+  @media (max-width: 400px) {
+    padding: 6.4rem 2rem 6.4rem 2rem;
+  }
+
+  & .heading__h2 {
+    margin-bottom: 1.6rem;
+    // border: 1px solid red;
+    // width: 100%;
+  }
+  & .paragraph__normal {
+    margin-bottom: 3.2rem;
+    background-color: rgba($color-white, 0.4);
+    backdrop-filter: blur(15px);
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+// COLOR VARIABLES
+$color-black: #222;
+$color-green: #609351;
+$color-green-light: #f1f6f1;
+$color-green-dark: #609351;
+$color-white: #fff;
+
+.color__green {
+  color: $color-green;
+}
+.color__green--light {
+  color: $color-green-light;
+}
+.color__green--dark {
+  color: $color-green-dark;
+}
+.color__black {
+  color: $color-black;
+}
+.color__white {
+  color: $color-white;
+}
+
+.bgcolor__black {
+  background-color: $color-black;
+}
+.bgcolor__white {
+  background-color: $color-white;
+}

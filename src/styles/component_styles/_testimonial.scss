@@ -1,0 +1,79 @@
+@use "../global/" as *;
+
+.container__testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5.6rem;
+
+  margin-bottom: 13rem;
+  // border: 1px solid green;
+}
+.testimonial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  // border: 1px solid blue;
+  position: relative;
+  & img {
+    max-width: 100%;
+  }
+
+  /* Splide customization */
+  & .splide__track {
+    border-radius: 1rem;
+  }
+
+  & .splide__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3.2rem;
+    border-radius: 1rem;
+    // border: 1px solid red;
+    padding: 10rem 12rem 0rem 12rem;
+    position: relative;
+    @media (max-width: 1200px) {
+      padding: 10rem 8rem 0rem 8rem;
+    }
+    @media (max-width: 400px) {
+      padding: 10rem 5rem 0rem 5rem;
+    }
+  }
+
+  & .splide__arrow {
+    background-color: transparent !important;
+    & svg {
+      fill: $color-green !important;
+      width: 4rem !important;
+      height: 4rem !important;
+    }
+    &--prev {
+      left: 1rem !important;
+    }
+    &--next {
+      right: 1rem !important;
+    }
+  }
+
+  & .splide__pagination__page {
+    // height: 10px !important;
+    // width: 10px !important;
+    opacity: $opacity-min !important;
+    bottom: -3.5em;
+
+    background-color: $color-green !important;
+
+    &.is-active {
+      opacity: $opacity-max !important;
+    }
+  }
+}
+.testimonial__word {
+  position: absolute;
+  top: 0;
+  left: 9rem;
+}

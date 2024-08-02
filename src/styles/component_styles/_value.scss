@@ -1,0 +1,50 @@
+@use "../global/" as *;
+.container__value {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 14rem;
+  // border: 1px solid green;
+  gap: 2rem;
+}
+.value {
+  &__item {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid red;
+
+    &-top {
+      width: 11.2rem;
+      height: 11.2rem;
+      background-color: $color-green-light;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 800px) {
+        width: 8rem;
+        height: 8rem;
+      }
+      @media (max-width: 400px) {
+        width: 6rem;
+        height: 6rem;
+      }
+      & img {
+        width: 4rem;
+        height: 4rem;
+        @media (max-width: 800px) {
+          width: 3rem;
+          height: 3rem;
+        }
+        @media (max-width: 400px) {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+}
