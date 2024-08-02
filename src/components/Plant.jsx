@@ -15,9 +15,8 @@ function Plant() {
             </h2>
             <p className="paragraph__normal opacity__medium align__center">
               Discover a diverse world of greenery, from air-purifying
-              succulents to lush tropicals,
-              <br /> whether for seasoned plant enthusiasts or those just
-              starting their green journey.
+              succulents to lush tropicals, whether for seasoned plant
+              enthusiasts or those just starting their green journey.
             </p>
           </div>
 

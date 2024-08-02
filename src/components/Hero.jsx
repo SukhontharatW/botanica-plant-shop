@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import HeroImg from "../images/Hero-section.png";
 
 function Hero() {
   return (
@@ -7,6 +8,7 @@ function Hero() {
         <div className="container__hero">
           <div className="hero__top">
             <div className="hero__greeting">
+              <img src={HeroImg} alt="" />
               <h1 className="heading__h1 spacing__min">
                 The Art of Green Living
               </h1>

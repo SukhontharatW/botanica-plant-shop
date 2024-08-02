@@ -3,10 +3,14 @@
 :root {
   --padding-main: 0 10rem;
 }
-
+@media (max-width: 1035px) {
+  :root {
+    --padding-main: 0 4rem;
+  }
+}
 @media (max-width: 800px) {
   :root {
-    --padding-main: 0 5rem;
+    --padding-main: 0 3rem;
   }
 }
 @media (max-width: 400px) {
@@ -207,6 +211,14 @@ $spacing_min: -0.112rem;
     font-style: normal;
     font-weight: 300;
     line-height: 2.4rem; /* 150% */
+  }
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 3.4rem !important;
+  }
+  h3 {
+    font-size: 2.2rem !important;
   }
 }
 .paragraph {
